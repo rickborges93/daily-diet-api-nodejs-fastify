@@ -23,7 +23,7 @@ describe('Users routes', () => {
       .send({ name: 'Test User', email: 'testuser@gmail.com' })
       .expect(201)
 
-    const cookies = response.get('Set-Cookie')
+    const cookies = response.get('Set-Cookie')!
 
     expect(cookies).toEqual(
       expect.arrayContaining([expect.stringContaining('sessionId')]),
