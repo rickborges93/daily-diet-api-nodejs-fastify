@@ -33,3 +33,23 @@
     - Quantidade total de refeições fora da dieta
     - Melhor sequência de refeições dentro da dieta
 - O usuário só pode visualizar, editar e apagar as refeições o qual ele criou
+
+### 🚀 Rode o projeto
+Clone o projeto e acesse a pasta raiz.
+
+```bash
+$ git clone https://github.com/rickborges93/daily-diet-api-nodejs-fastify.git
+$ cd daily-diet-api-nodejs-fastify
+```
+Inicie o projeto seguindo estes passos:
+```bash
+# Instale as dependências
+$ npm install
+
+# Rode as migrations
+$ npm run knex -- migrate:latest
+
+# Por fim, rode o projeto
+$ npm run dev
+```
+Agora poderão ser feitas as requisições pela URL: http://localhost:3333
